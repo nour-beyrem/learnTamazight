@@ -1,12 +1,12 @@
 package com.example.learntamazight;
 
-public class word {
+public class Word {
     private static final int IMAGE_INDISPONIBLE= -1;
     private String mDefaultTranslation;
     private String mTamazigheTranslation;
     private int mImageResId = IMAGE_INDISPONIBLE;
 
-    public word(String mDefaultTranslation, String mTamazigheTranslation, int _mImageResId) {
+    public Word(String mDefaultTranslation, String mTamazigheTranslation, int _mImageResId) {
         this.mDefaultTranslation = mDefaultTranslation;
         this.mTamazigheTranslation = mTamazigheTranslation;
         this.mImageResId = _mImageResId;

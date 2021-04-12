@@ -48,17 +48,17 @@ public class NumbersActivity extends AppCompatActivity {
         _lsvNumbers = (ListView) findViewById(R.id.lsvNumbers);
         _lsvNumbers.setAdapter(itemAdapter);*/
         //3éme configuration
-        final ArrayList<word> awords = new ArrayList<word>();
-        awords.add(new word("un","yan",R.drawable.un));
-        awords.add(new word("deux","sin",R.drawable.deux));
-        awords.add(new word("trois","krad",R.drawable.trois));
-        awords.add(new word("quatre","kouz",R.drawable.quatre));
-        awords.add(new word("cinq","smmous",R.drawable.cinq));
-        awords.add(new word("six","sdis",R.drawable.six));
-        awords.add(new word("sept","sa",R.drawable.sept));
-        awords.add(new word("huit","tam",R.drawable.huit));
-        awords.add(new word("neuf","tza",R.drawable.neuf));
-        awords.add(new word("dix","mzaw",R.drawable.dix));
+        final ArrayList<Word> awords = new ArrayList<Word>();
+        awords.add(new Word("un","yan",R.drawable.un));
+        awords.add(new Word("deux","sin",R.drawable.deux));
+        awords.add(new Word("trois","krad",R.drawable.trois));
+        awords.add(new Word("quatre","kouz",R.drawable.quatre));
+        awords.add(new Word("cinq","smmous",R.drawable.cinq));
+        awords.add(new Word("six","sdis",R.drawable.six));
+        awords.add(new Word("sept","sa",R.drawable.sept));
+        awords.add(new Word("huit","tam",R.drawable.huit));
+        awords.add(new Word("neuf","tza",R.drawable.neuf));
+        awords.add(new Word("dix","mzaw",R.drawable.dix));
         WordAdapter itemAdapter = new WordAdapter(this,awords);
         _lsvNumbers = (ListView) findViewById(R.id.lsvNumbers);
         _lsvNumbers.setAdapter(itemAdapter);

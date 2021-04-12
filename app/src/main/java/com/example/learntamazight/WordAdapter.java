@@ -13,11 +13,11 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter<word> {
+public class WordAdapter extends ArrayAdapter<Word> {
 
 
-    public WordAdapter(@NonNull Context context, ArrayList<word> words) {
-        super(context, 0,words);
+    public WordAdapter(@NonNull Context context, ArrayList<Word> Words) {
+        super(context, 0, Words);
     }
 
     @NonNull
@@ -29,7 +29,7 @@ public class WordAdapter extends ArrayAdapter<word> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_layout,parent,false);
 
         }
-        word currentWord = getItem(position);
+        Word currentWord = getItem(position);
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.txtFrancais);
         numberTextView.setText(currentWord.getmDefaultTranslation());
 
